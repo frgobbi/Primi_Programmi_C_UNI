@@ -12,7 +12,7 @@ int main(){
 	numeroS = rand()%1000+1;
 	
 	
-		printf("dcon 0 finisce il gioco)\n");
+		printf("(con 0 finisce il gioco)\n");
 		printf("Ho pensato un numero tra 1 e 1000.\n");
 	do{
 		printf("Indovina che numero ho pensato: \n");

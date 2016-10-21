@@ -21,7 +21,7 @@ int main(){
 				}
 			}
 		} while(b!=1);
-		vetB[i]= app;	
+		vetA[i]= app;	
 	}
 	
 	do{
@@ -36,13 +36,17 @@ int main(){
 				controllo = 1;
 			}
 		}
-	
+	if(controllo == 1){
+	printf("ti sei arreso\n i numeri da indovinare erano \n %d\t %d\t %d\t%d",vetA[0],vetA[1],vetA[2],vetA[3]);	
+	} else{
 	s = strike(vetA, vetB);
 	b = ball(vetA, vetB);
 	
 	printf("______________________________________");
 	printf("\n strike: %d",s);
-	printf("\n ball: %d\n",b);
+	printf("\n ball: %d\n",b);	
+	}
+	
 	} while((s !=4) && (controllo !=1));
 }
 

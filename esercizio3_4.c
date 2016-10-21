@@ -10,19 +10,29 @@ int main(){
 		for(i=0;i<4;i++){
 		vetA[i]= 100;	
 		}
-	
+		
+	printf("___________________________________________________________________\n");
+	printf("|                   INDOVINA I NUMERI!!!!! :)                     |\n");	
+	printf("|_________________________________________________________________|\n");
+	//Ciclo che inserisce i valori
 	for(i=0;i<4;i++){
+		//ciclo che vincola i valori diversi
 		do{
 			b = 1;
 			app = rand()%10;
+			//ciclo che controlla se il valore random è contenuto nell'array
 			for(j=0;j<4;j++){
 				if(app == vetA[j]){
 					b=0;
 				}
 			}
 		} while(b!=1);
-		vetB[i]= app;	
+		vetA[i]= app;	
 	}
+	
+	/*for(j=0;j<4;j++){
+		printf("%d",vetA[j]);
+	}*/
 	
 	do{
 		printf("indovina i valori");
@@ -53,10 +63,10 @@ int strike(int vetA[], int vetB[]){
 }
 
 int ball(int vetA[], int vetB[]){
-	int i, c,j;
+	int i, c,j,esito;
 	c=0;
 	for(i=0;i<4;i++){
-		int esito = 0;
+		esito = 0;
 		for(j=0;j<4;j++){
 			if(i!=j){
 				if(vetA[i]==vetB[j]){
